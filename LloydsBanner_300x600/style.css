@@ -1,0 +1,240 @@
+/* RESET CSS */
+
+* {
+    transition: cubic-bezier(.17, .67, .83, .67);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "GTU-Black";
+    src: url("./fonts/subset-GTUltraMedianLloyds-Black.woff");
+}
+
+@font-face {
+    font-family: "GTU-Light";
+    src: url("./fonts/subset-GTUltraLloyds-Light.woff");
+}
+
+@font-face {
+    font-family: "GTU-Bold";
+    src: url("./fonts/subset-GTUltraLloyds-Bold.woff");
+}
+
+/* BODY, CONTAINER CSS */
+
+body {
+    background: #ffffff;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: "GTU-Light";
+    line-height: 1.5;
+}
+
+#bannerContainer {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#border {
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* COMMON CSS */
+
+.abs0 {
+    opacity: 0
+}
+
+.abs1 {
+    opacity: 1
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.font-black {
+    font-family: "GTU-Black";
+}
+
+.font-bold {
+    font-family: "GTU-Bold";
+}
+
+/* MAIN CSS */
+
+.main-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scale(1.5);
+}
+
+.frame1,
+.frame2,
+.frame3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-white {
+    position: absolute;
+    height: 52px;
+    top: 18px;
+    left: 24px;
+}
+
+
+.copy1 {
+    bottom: 20px;
+    left: 9px;
+    position: absolute;
+}
+
+.copy1 span {
+    display: block;
+    font-size: 69px;
+    line-height: 1;
+    letter-spacing: -0.3px;
+    position: relative;
+}
+
+.copy1 span.line2 {
+    left: 10px;
+    top: -11px;
+}
+
+.bottom-text,
+.btm-text-black {
+    position: absolute;
+    font-size: 11.5px;
+    color: #fff;
+    bottom: 12px;
+    line-height: 1;
+    left: 22px;
+}
+
+.btm-text-black {
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    left: auto;
+}
+
+/* COPY 2 */
+.copy2 {
+    position: absolute;
+    top: 325px;
+    left: 21px;
+}
+
+.copy2 span {
+    font-size: 52px;
+    line-height: 0.9;
+    display: block;
+    position: relative;
+    letter-spacing: -3px;
+}
+
+
+/* Frame 3 */
+.frame3 {
+    background: #6cf479;
+    color: #000000;
+}
+
+.copy3 {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    color: #000;
+    text-align: center;
+    width: 100%;
+}
+
+.copy3 span {
+    font-size: 52.5px;
+    line-height: 1;
+    display: block;
+    position: relative;
+}
+
+.copy4 {
+    position: absolute;
+    left: 0;
+    top: 230px;
+    width: 100%;
+    text-align: center;
+}
+
+.copy4 span {
+    display: block;
+    line-height: 1.1;
+    font-size: 19px;
+}
+
+.black-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    bottom: 110px;
+    width: 100%;
+    align-items: center;
+}
+
+.black-logo .horse {
+    height: 44px;
+}
+
+.black-logo .logo-text {
+    height: 11px;
+}
+
+.cta-btn {
+    position: absolute;
+    color: #000000;
+    font-size: 19.5px;
+    top: 350px;
+    left: 78px;
+    width: 145px;
+    height: 43px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

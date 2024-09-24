@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- META DATA -->
+  <meta name="ad.size" content="width=300,height=600">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ALWAYS HTTPS LINKS TO ANY JS OR GOOGLE FONT FILES -->
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.11.5_min.js"></script>
+
+  <!-- ADD TITLE -->
+  <title>300x600</title>
+  <script type="text/javascript">
+    var clickTag = "https://www.lloydsbank.com/";
+  </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div id="bannerContainer">
+    <!-- Background -->
+    <div class="main-bg">
+      <img src="background.jpg" alt="main-bg" />
+    </div>
+    <!-- Frame 1 -->
+    <div class="frame frame1">
+      <img src="logo.svg" class="logo-white" alt="logo-white" />
+      <div class="copy1 font-black">
+        <span class="line1 abs0">Yes,</span>
+        <span class="line2 abs0">I invest</span>
+      </div>
+      <div class="copy2 font-black">
+        <span class="line1 abs0">I quite</span>
+        <span class="line2 abs0">like</span>
+        <span class="line3 abs0">picking</span>
+        <span class="line4 abs0">where</span>
+        <span class="line5 abs0">I invest</span>
+      </div>
+      <div class="bottom-text abs0">
+        Capital at risk. Account fees and charges apply.
+      </div>
+    </div>
+    <!-- Frame 3 -->
+    <div class="frame frame3">
+      <div class="copy3 font-black">         
+        <span class="line1 abs0">Proper</span>
+        <span class="line2 abs0">picky?</span>
+      </div>
+      <div class="copy4">
+        <span class="line1 abs0">Pick from a wide</span>
+        <span class="line2 abs0">range of investment</span>
+        <span class="line3 abs0">options and manage</span>
+        <span class="line4 abs0">them all in the app.</span>
+      </div>
+      <div class="black-logo">
+        <img src="horse.svg" class="horse abs0" alt="horse-img" />
+        <img src="logo_text.svg" class="logo-text abs0" alt="logo-text-img" />
+      </div>
+      <a href="javascript:window.open(window.clickTag)" class="cta-btn font-black abs0">Invest now</a>
+      <div class="btm-text-black abs0">
+        Capital at risk. Account fees and charges apply.
+      </div>
+    </div>
+    <div id="border"></div>
+  </div>
+
+
+  <script>
+    // DOM INSTALL
+    var DOMReady = function (a, b, c) {
+      b = document, c = 'addEventListener';
+      b[c] ? b[c]('DOMContentLoaded', a) : window.attachEvent('onload', a)
+    }
+
+    // DOM READY
+    DOMReady(function () {
+      animation()
+    });
+
+    // BEGIN THE GREENSOCK ANIMATION
+    function animation() {
+
+      var t1 = new TimelineMax({
+        repeat: 0,
+        repeatDelay: 0
+      });
+      t1.add(s1(), "+=0");
+      t1.add(s2(), "+=0.5");
+      t1.add(s3(), "+=0.5");
+    }
+
+    function s1() {
+      var t1 = new TimelineMax({
+        repeat: 0,
+        repeatDelay: 0
+      });
+      t1
+        .to(".main-bg", 0.5, {
+          scale: 1,
+          x: 0,
+          y: 0,
+          ease: "power2.in"
+        }, 0)
+        .fromTo(".copy1 span", 2, {
+          y: 40
+        }, {
+          autoAlpha: 1,
+          x: 0,
+          y: 0,
+          stagger: 0.3,
+          ease: "elastic.inOut(2,0.9)"
+        }, "-=0.5")
+        .to(".bottom-text", 0.5, {
+          autoAlpha: 1,
+          ease: "power2.in"
+        }, 1.5)
+        .to(".copy1", 0.3, {
+          x: -300,
+          autoAlpha: 1,
+          stagger: 0.01,
+          ease: "power4.in"
+        }, 2.5)
+      return t1;
+    }
+
+
+    // SCREEN 2
+    function s2() {
+      var t1 = new TimelineMax({
+        repeat: 0,
+        repeatDelay: 0
+      });
+      t1
+        .fromTo(".copy2 span", 0.5, {
+          y: 20
+        }, {
+          autoAlpha: 1,
+          x: 0,
+          y: 0,
+          stagger: 0.2,
+          ease: "power2.in"
+        }, "-=1")
+
+      return t1;
+    }
+
+    // SCREEN 3
+    function s3() {
+      var t1 = new TimelineMax({
+        repeat: 0,
+        repeatDelay: 0
+      });
+      t1
+        .fromTo(".frame3", 0.5, {
+          autoAlpha: 1,
+          x: -320
+        }, {
+          autoAlpha: 1,
+          x: 0,
+          ease: "power2.in"
+        }, "+=0.1")
+        .fromTo(".horse, .logo-text", 0.5, {
+          autoAlpha: 0,
+          x: -50
+        }, {
+          autoAlpha: 1,
+          x: 0,
+          stagger: 0.2,
+          ease: "power2.in"
+        }, "+=0.2")
+        .fromTo(".btm-text-black", 0.5, {
+          autoAlpha: 0,
+          y: 10
+        }, {
+          autoAlpha: 1,
+          y: 0,
+          ease: "power2.in"
+        }, "+=0.2")
+        .fromTo(".copy3 span", 0.5, {
+          autoAlpha: 0,
+          x: -50
+        }, {
+          autoAlpha: 1,
+          x: 0,
+          ease: "power2.in",
+          stagger: 0.2
+        }, "+=0.1")        
+        .fromTo(".copy4 span", 0.5, {
+          autoAlpha: 0,
+          x: -30,
+        }, {
+          autoAlpha: 1,
+          x: 0,
+          ease: "power2.in",
+          stagger: 0.2
+        }, "+=0.1")
+        .fromTo(".cta-btn", 0.4, {
+          autoAlpha: 0,
+          y: 10
+        }, {
+          autoAlpha: 1,
+          y: 0,
+          ease: "power2.in"
+        }, "+=0.2")
+
+      return t1;
+    }
+
+    // ClickTag script
+    var clickTag = "https://www.lloydsbank.com/";
+    let button = document.querySelector('.cta-btn');
+    document.querySelector('#bannerContainer').addEventListener('click', function () {
+      button.click();
+    })
+  </script>
+
+</body>
+
+</html>

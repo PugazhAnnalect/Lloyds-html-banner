@@ -1,0 +1,226 @@
+/* RESET CSS */
+
+* {
+    transition: cubic-bezier(.17, .67, .83, .67);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: "GTU-Black";
+    src: url("./fonts/subset-GTUltraMedianLloyds-Black.woff");
+}
+
+@font-face {
+    font-family: "GTU-Light";
+    src: url("./fonts/subset-GTUltraLloyds-Light.woff");
+}
+
+@font-face {
+    font-family: "GTU-Bold";
+    src: url("./fonts/subset-GTUltraLloyds-Bold.woff");
+}
+
+/* BODY, CONTAINER CSS */
+
+body {
+    background: #ffffff;
+    overflow: hidden;
+    color: #ffffff;
+    font-family: "GTU-Light";
+    line-height: 1.5;
+}
+
+#bannerContainer {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#border {
+    position: absolute;
+    width: 728px;
+    height: 90px;
+    top: 0px;
+    left: 0px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/* COMMON CSS */
+
+.abs0 {
+    opacity: 0
+}
+
+.abs1 {
+    opacity: 1
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.font-black {
+    font-family: "GTU-Black";
+}
+
+.font-bold {
+    font-family: "GTU-Bold";
+}
+
+/* MAIN CSS */
+
+.main-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transform: scale(1.5);
+}
+
+.frame1,
+.frame2,
+.frame3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-white {
+    position: absolute;
+    right: 35px;
+    top: 16px;
+    height: 55px;
+}
+
+
+.copy1 {
+    bottom: 20px;
+    left: 15px;
+    position: absolute;
+}
+
+.copy1 span {
+    display: inline-block;
+    font-size: 54px;
+    line-height: 1;
+    letter-spacing: -0.9px;
+    position: relative;
+}
+
+.copy1 span.line2 {
+    /* left: 6px;
+    top: -7px; */
+}
+
+.bottom-text,
+.btm-text-black {
+    position: absolute;
+    font-size: 11px;
+    color: #fff;
+    text-align: center;
+    bottom: 3px;
+    left: 25px;
+}
+
+.btm-text-black {
+    color: #000000;
+}
+
+/* COPY 2 */
+.copy2 {
+    position: absolute;
+    top: 7px;
+    left: 26px;
+}
+
+.copy2 span {
+    font-size: 32px;
+    line-height: 1;
+    display: block;
+    position: relative;
+}
+
+
+/* Frame 3 */
+.frame3 {
+    background: #6cf479;
+    color: #000000;
+}
+
+.copy3 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    color: #000;
+    font-size: 52px;
+    letter-spacing: -1px;
+}
+
+.copy4 {
+    position: absolute;
+    left: 26px;
+    top: 20px;
+}
+
+.copy4 span {
+    display: block;
+    font-size: 17.4px;
+    line-height: 19.4px;
+}
+
+.black-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    position: absolute;
+    right: 35px;
+    top: 16px;
+}
+
+.black-logo .horse {
+    height: 42px;
+}
+
+.black-logo .logo-text {
+    height: 10px;
+}
+
+.cta-btn {
+    position: absolute;
+    color: #000000;
+    font-size: 16px;
+    bottom: 26px;
+    right: 175px;
+    width: 120px;
+    height: 37px;
+    border-radius: 50px;
+    border: 1px solid #000000;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
