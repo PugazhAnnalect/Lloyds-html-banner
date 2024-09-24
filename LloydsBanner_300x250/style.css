@@ -132,6 +132,7 @@ body {
 /* Frame 3 */
 .frame3 {
     background: #78dd74;
+    background: #6cf479;
     display: flex;
     align-items: center;
     justify-content: center;
